@@ -8,10 +8,10 @@
     <link rel="stylesheet" href="./css/main.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@700&display=swap" rel="stylesheet">
-    l="stylesheet">
 </head>
 
 <body class="body">
+    
     <header class="mainHeader">
         <div class="container">
             <nav class="mainNavigation">
@@ -43,6 +43,7 @@
             </div>
         </div>
     </header>
+    
     <main class="mainContainer">
         <div class="indexLogo">
             <img src="./img/Logo.png" alt="Барбершоп Бородинський">
@@ -98,9 +99,10 @@
                 </ul>
                 <!-- <div class="btn"> 
                 </div> -->
-                <a class="btn" href="#">
-                    Всі новини
-                </a>
+                <div class="btnBox"> <a class="btn" href="#">
+                        Всі новини
+                    </a></div>
+
             </div>
 
             <div class="indexContentRight">
@@ -109,24 +111,41 @@
                     <figure class="galleryContent">
                         <img src="./img/Layer21.png" width="286" height="164" alt="">
                     </figure>
-                    <button class="btnGalleryPrev" type="button">Назад</button>
-                    <button class="btnGalleryNext" type="button">Вперед</button>
+                    <button class="btnGalleryPrev btn" type="button">Назад</button>
+                    <button class="btnGalleryNext btn " type="button">Вперед</button>
                 </div>
             </div>
         </div>
         <div class="indexContent">
             <div class="indexContentLeft">
                 <h2 class="indexContentTitle"> Контактна інформація</h2>
-                <p>БАРБЕРШОП «БОРОДИНСКИЙ»
-                <p>АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, Б. КОНЮШЕННАЯ, Д. 19/8</p>
-                <p>ТЕЛЕФОН: +7 (495) 666-02-66</p>
+                <p class="contact">БАРБЕРШОП «БОРОДИНСКИЙ»
+                <p class="contact">АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, Б. КОНЮШЕННАЯ, Д. 19/8</p>
+                <p class="contact">ТЕЛЕФОН: +7 (495) 666-02-66</p>
 
 
                 <p>
                     ВРЕМЯ РАБОТЫ:
-                    ПН — ПТ: С 10:00 ДО 22:00
-                    СБ — ВС: С 10:00 ДО 19:00
                 </p>
+                <p class="contact">ПН — ПТ: С 10:00 ДО 22:00</p>
+                <p class="contact">СБ — ВС: С 10:00 ДО 19:00</p>
+                <div class="btnBox">
+                    <a class="btn" href="#">
+                        Як дістатись
+                    </a>
+                    <a class="btn" href="#">
+                        Зворотній звязок
+                    </a>
+                    <!-- <a href="#">
+                        <div class="btnContact">Як дістатись</div>
+                    </a>
+                    <a  href="#">
+                        <div class="btnContact">зворотній звязок</div>
+                    </a> -->
+                </div>
+
+
+
 
             </div>
 
@@ -137,11 +156,14 @@
                 </p>
                 <form class="oppointmentForm" action="https://mail.google.com/mail/u/0/?pli=1#inbox" method="post">
                 </form>
-                <input type="text" name="time" value="" placeholder="Дата">
-                <input type="text" name="time" value="" placeholder="Час">
-                <input type="text" name="time" value="" placeholder="Ваше ім’я">
-                <input type="text" name="time" value="" placeholder="Номер телефона">
-                <button class="btn" type="submit">Відправити</button>
+                
+                    <input class="formItem" type="text" name="time" value="" placeholder=" Дата">
+                    <input class="formItem" type="text" name="time" value="" placeholder=" Час">
+                    <input class="formItem" type="text" name="time" value="" placeholder=" Ваше ім’я">
+                    <input class="formItem" type="text" name="time" value="" placeholder=" Номер телефона">
+                
+
+                <button class="sendBtn" type="submit">Відправити</button>
 
             </div>
         </div>
@@ -151,15 +173,24 @@
             <div class="footerContacts">
                 <p>БАРБЕРШОП «БОРОДИНСКИЙ»</p>
                 <p>АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, УЛ. Б. КОНЮШЕННАЯ, Д. 19/8</p>
+                <p>
+                    КАК НАС НАЙТИ?
+                </p>
 
                 <p>ТЕЛЕФОН: +7 (495) 666-02-66</p>
 
             </div>
             <section class="footerSocial">
                 <p>Давайте Дружити!</p>
-                <a class="btnVk" href="#">Вконтакті</a>
-                <a class="btnFb" href="#">Фейсбук</a>
-                <a class="btnVInst" href="#">Інстаграм</a>
+                <a class="btnVk" href="#">
+                    <img src="./img/vk.png" alt="">
+                </a>
+                <a class="btnFb" href="#">
+                    <img src="./img/fb.png" alt="">
+                </a>
+                <a class="btnVInst" href="#">
+                    <img src="./img/inst.png" alt="">
+                </a>
             </section>
             <section class="footerCopiright">
                 <p>Виконав:</p>

@@ -4,22 +4,28 @@ body{
 }
 .body {
     /* display: flex; */
+    
   margin-left: auto;
   margin-right: auto;
     background: url(../img/tint.jpg ) ;
+    
     background-repeat: no-repeat;
     background-size: cover;
     font-family: 'PT Sans Narrow', sans-serif;
     
 }
+ p{
+     text-transform: uppercase;
+ }
 
 
 .mainHeader {
 /* position: relative; */
 display: flex;
-/* top: 0%;
-margin: 0; */
-width: 100%;
+margin-left: auto;
+margin-right: auto;
+margin: 0;
+width: auto;
 height: 65px;
 
 text-align:center;
@@ -145,6 +151,8 @@ margin-top: 17px;
     line-height:1.7 ;
     background-image: url(../img/Layer.png);
 }
+
+
 .indexContentLeft {
     width: 350px;
     margin-left:64px;
@@ -169,26 +177,30 @@ margin-top: 17px;
     width: 140px;
     height: 45px;
     margin: 0;
-    padding-left: 32px;
-    padding-right: 32px;
+   margin-left: 0;
+    margin-right: 8px;
+    margin-bottom: 40px;
     padding-top: 14px;
     padding-bottom: 14px;
-    justify-content: center;
+    text-align:center;
     background-color: black;
-   
+   font-family: 'PT Sans Narrow';
      text-decoration: none;
     text-transform: uppercase;
     color: white;
+    line-height: 1;
+    border: none;
 }
 
-.btnText{
+
+/* .btnText{
     width: 140px;
     height: 45px;
     margin: 0;
     justify-content: center;
     background-color: black;
     
-}
+} */
 .newsPoint {
     
     text-decoration: none;
@@ -198,10 +210,11 @@ margin-top: 17px;
 }
 
 .indexContentRight {
-    box-sizing: border-box;
-     width: 350px;
+    
+     width: 300px;
      margin-left: auto;
-     margin-right: 0;
+     margin-right: auto;
+     
 }
 
 .indexContentTitle {
@@ -212,10 +225,10 @@ margin-top: 17px;
 .galleryContent {
     padding: 0;
     margin: 0;
-    margin-bottom:  60px; ;
+    margin-bottom:  60px; 
     
 }
-.btnGalleryPrev {
+/* .btnGalleryPrev {
   
     box-sizing: border-box;
     
@@ -235,10 +248,9 @@ margin-top: 17px;
      text-decoration: none;
     text-transform: uppercase;
     color: white;
-}
-.btnGalleryNext {
+} */
+/* .btnGalleryNext {
     box-sizing: border-box;
-    
     
     width: 140px;
     height: 45px;
@@ -253,18 +265,111 @@ margin-top: 17px;
      text-decoration: none;
     text-transform: uppercase;
     color: white;
+} */
+
+.contact{
+    margin: 0;
+    font-weight: 1.7;
+    
 }
+.btnBox{
+    display: flex;
+    margin-top: 60px;
+    
+}
+/* .btnContact{
+box-sizing: border-box;
+width: 140px;
+height: 45px;
+margin-right: 20px;
+background-color: black;
+
+
+text-align: center;
+color: white;
+text-decoration: none;
+text-transform: uppercase;
+
+} */
 .indexContentTittle {
 }
 .oppointmentForm {
+    box-sizing: border-box;
+    width: 350px;
+    margin-left: auto;
+    margin-right: 0;
+    
 }
+/* .formContainer {
+    display:flex ;
+    width: 300px;
+    justify-content: space-between; */
+
+.formItem {
+    margin: 0;
+    padding: 0;
+
+    
+    margin-bottom: 20px;
+    /* margin-right: auto; */
+    box-sizing: border-box;
+    border:1px solid #000000;
+    width: 140px;
+    height: 45px;
+    
+    
+}
+
+
+.sendBtn {
+    box-sizing: border-box;
+      
+    width: 300px;
+    height: 45px;
+    margin: 0;
+    /* margin-left: auto; */
+    margin-right: auto;
+    /* margin-right: 20px; */
+    padding-top: 14px;
+    padding-bottom: 14px;
+    text-align:center;
+    justify-content: center;
+    background-color: black;
+   font-family: 'PT Sans Narrow';
+     text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    line-height: 1;
+}
+
 .mainFooter {
+    margin: 0;
+    display: flex;
+margin-left: auto;
+margin-right: auto;
+margin-top: 65px;
+width: auto;
+height: 190px;
+color: white;
+text-align:center;
+justify-content:center;
+
+
+background-color: rgb(34, 34, 34) ;
 }
 .footerContacts {
-    display: flex;
-    flex-direction: column;
+    width: 300px;
+    margin-left: 40px;
+    text-align: start;
+    line-height: 1.2;
+    }
 }
 .footerSocial {
+    margin-left: auto;
+    margin-right: auto;
+    text-transform: uppercase;
+
+
 }
 .btnVk {
 }
@@ -273,4 +378,10 @@ margin-top: 17px;
 .btnVInst {
 }
 .footerCopiright {
+    width: 300px;
+    margin-right: 40px;
+    margin-top: auto;
+    margin-bottom: 40px;
+    text-align: end;
+    
 }
