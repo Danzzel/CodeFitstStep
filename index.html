@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Барбершоп "Бородинський"</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@700&display=swap" rel="stylesheet">
+    l="stylesheet">
+</head>
+
+<body class="body">
+    <header class="mainHeader">
+        <div class="container">
+            <nav class="mainNavigation">
+                <ul>
+                    <li><a class="navPoint" href="./pages/info.html">ІНФОРМАЦІЯ</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li><a class="navPoint" href="./pages/news.html">НОВИНИ</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li> <a class="navPoint" href="./pages/price.html">ПРАЙС-ЛИСТ</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li><a class="navPoint" href="./pages/shop.html">МАГАЗИН</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li><a class="navPoint" href="./pages/contacts.html">КОНТАКТИ</a>
+                    </li>
+                </ul>
+
+            </nav>
+            <div class="UserBlock">
+                <a class="login" href="#">
+                    <img src="./img/iconLogin.png" alt=""> ВХІД</a>
+            </div>
+        </div>
+    </header>
+    <main class="mainContainer">
+        <div class="indexLogo">
+            <img src="./img/Logo.png" alt="Барбершоп Бородинський">
+        </div>
+
+        <section class="features">
+            <div class="featuresItem">
+                <b class="featuresName">Швидко</b>
+                <img class="img" src="./img/Shape1.png" width="30px" , height="30px" alt="">
+                <p class="featuresText">МЫ ДЕЛАЕМ СВОЮ РАБОТУ БЫСТРО! ДВА ЧАСА ПРОЛЕТЯТ НЕЗАМЕТНО И ВЫ — СЧАСТЛИВЫЙ
+                    ОБЛАДЕТЕЛЬ СТИЛЬНОЙ
+                    СТРИЖКИ-МИНУТКИ!</p>
+            </div>
+            <div class="featuresItem">
+                <b class="featuresName">Круто</b>
+                <img class="img" src="./img/Shape1.png" width="30px" , height="30px" alt="">
+                <p class="featuresText">ЗАБУДЬТЕ, КАК ВЫ СТРИГЛИСЬ РАНЬШЕ.
+                    МЫ СДЕЛАЕМ ИЗ ВАС ЗВЕЗДУ ФУТБОЛА ИЛИ КИНО!
+                    ВО ВСЯКОМ СЛУЧАЕ ВНЕШНЕ.
+                </p>
+            </div>
+            <div class="featuresItem">
+                <b class="featuresName">Дорого</b>
+                <img class="img" src="./img/Shape1.png" width="30px" , height="30px" alt="">
+                <p class="featuresText">НАШИ МАСТЕРА — ПРОФЕССИОНАЛЫ СВОЕГО ДЕЛА И НЕ МОГУТ СТОИТЬ ДЕШЕВО. К ТОМУ ЖЕ,
+                    РАЗВЕ ЦЕНА НЕ ДАЕТ
+                    ОПРЕДЕЛЕНЫЙ СТАТУС?</p>
+            </div>
+        </section>
+
+
+        <div class="indexContent">
+            <div class="indexContentLeft">
+                <h2 class="indexContentTitle"> Новини</h2>
+                <ul class="list">
+                    <li class="newsPoint">
+                        <p class="lastNews">НАМ НАКОНЕЦ ЗАВЕЗЛИ ЯГЕРМАЙСТЕР! ТЕПЕРЬ ВЫ МОЖЕТЕ ПРОПУСТИТЬ СТАКАНЧИК ВО
+                            ВРЕМЯ СТРИЖКИ
+
+                        </p>
+                        <time datetime="2016-01-11">11 января</time>
+
+                    </li>
+                    <li class="newsPoint">
+                        <p class="lastNews">В НАШЕЙ КОМАНДЕ ПОПОЛНЕНИЕ, БОРИС «БРИТВА» СТРИГУНЕЦ, ОБЛАДЕТЕЛЬ МНОЖЕСТВА
+                            ТИТУЛОВ И НАГРАД
+                            ПОПОЛНИЛ НАШИ СТРОЙНЫЕ РЯДЫ
+
+                        </p>
+                        <time datetime="2016-01-10">10 января</time>
+
+                    </li>
+                </ul>
+                <!-- <div class="btn"> 
+                </div> -->
+                <a class="btn" href="#">
+                    Всі новини
+                </a>
+            </div>
+
+            <div class="indexContentRight">
+                <h2 class="indexContentTitle">Фотогалерея</h2>
+                <div class="gallery">
+                    <figure class="galleryContent">
+                        <img src="./img/Layer21.png" width="286" height="164" alt="">
+                    </figure>
+                    <button class="btnGalleryPrev" type="button">Назад</button>
+                    <button class="btnGalleryNext" type="button">Вперед</button>
+                </div>
+            </div>
+        </div>
+        <div class="indexContent">
+            <div class="indexContentLeft">
+                <h2 class="indexContentTitle"> Контактна інформація</h2>
+                <p>БАРБЕРШОП «БОРОДИНСКИЙ»
+                <p>АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, Б. КОНЮШЕННАЯ, Д. 19/8</p>
+                <p>ТЕЛЕФОН: +7 (495) 666-02-66</p>
+
+
+                <p>
+                    ВРЕМЯ РАБОТЫ:
+                    ПН — ПТ: С 10:00 ДО 22:00
+                    СБ — ВС: С 10:00 ДО 19:00
+                </p>
+
+            </div>
+
+            <div class="indexContentRight">
+                <h2 class="indexContentTitle">Записатись</h2>
+                <p>
+                    УКАЖИТЕ ЖЕЛАЕМУЮ ДАТУ И ВРЕМЯ И МЫ СВЯЖЕМСЯ С ВАМИ ДЛЯ ПОДТВЕРЖДЕНИЯ БРОНИ
+                </p>
+                <form class="oppointmentForm" action="https://mail.google.com/mail/u/0/?pli=1#inbox" method="post">
+                </form>
+                <input type="text" name="time" value="" placeholder="Дата">
+                <input type="text" name="time" value="" placeholder="Час">
+                <input type="text" name="time" value="" placeholder="Ваше ім’я">
+                <input type="text" name="time" value="" placeholder="Номер телефона">
+                <button class="btn" type="submit">Відправити</button>
+
+            </div>
+        </div>
+    </main>
+    <footer class="mainFooter">
+        <div class="container">
+            <div class="footerContacts">
+                <p>БАРБЕРШОП «БОРОДИНСКИЙ»</p>
+                <p>АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, УЛ. Б. КОНЮШЕННАЯ, Д. 19/8</p>
+
+                <p>ТЕЛЕФОН: +7 (495) 666-02-66</p>
+
+            </div>
+            <section class="footerSocial">
+                <p>Давайте Дружити!</p>
+                <a class="btnVk" href="#">Вконтакті</a>
+                <a class="btnFb" href="#">Фейсбук</a>
+                <a class="btnVInst" href="#">Інстаграм</a>
+            </section>
+            <section class="footerCopiright">
+                <p>Виконав:</p>
+                <p>Мельник Денис</p>
+            </section>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
