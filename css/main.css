@@ -18,7 +18,9 @@ font-family: 'PT Sans Narrow', sans-serif;
 
 }
 
-
+li {
+    list-style: none;
+}
 
 
     
@@ -426,7 +428,11 @@ text-transform: uppercase;
     text-align: end;
 
 }
-
+ .smile {
+     t
+     margin-right: auto;
+     margin-left: auto;
+ }
 
 .bodyPages {
     height: 100%;
@@ -534,6 +540,17 @@ margin-bottom: auto;
     cursor: pointer;
 }
 
+.complect {
+    margin-top: 53px;
+}
+
 .complectItem {
-   list-style-image: url(../img/ShapeShop.png);
+    margin: 0;
+    margin-top: 40px;
+
+
+}
+ 
+.complectImgShape {
+    margin: 0;margin-right: 10px;
 }
