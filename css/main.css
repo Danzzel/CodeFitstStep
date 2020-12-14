@@ -53,7 +53,7 @@ img {
 .container {
     /* position: absolute; */
     display: flex;
-    width: 940px;
+    width: 960px;
     margin: 0, auto;
     /* right: 0; */
     padding: 0, 10;
@@ -205,7 +205,8 @@ img {
     margin-bottom: 60px;
 }
 
-.btn {
+
+/* .btn {
 
     box-sizing: border-box;
 
@@ -225,7 +226,7 @@ img {
     color: white;
     line-height: 1;
     border: none;
-}
+} */
 
 
 /* .btnText{
@@ -429,7 +430,7 @@ text-transform: uppercase;
 
 }
  .smile {
-     t
+     
      margin-right: auto;
      margin-left: auto;
  }
@@ -450,8 +451,9 @@ text-transform: uppercase;
     margin-bottom: auto;
 }
 .containerOther {
-    width: 940px;
     margin: 0;
+    width: 960px;
+    
     margin-right: auto;
     margin-left: auto;
     
@@ -463,9 +465,7 @@ text-transform: uppercase;
     margin-bottom: 25px;
     text-transform: uppercase;
 } 
-.shopNav {
-    margin-bottom: 50px;
-}
+
 
 .shopSection {
     font-size: 14px;
@@ -553,4 +553,172 @@ margin-bottom: auto;
  
 .complectImgShape {
     margin: 0;margin-right: 10px;
+}
+
+
+
+
+/* careProdaction
+careProdaction
+careProdaction
+careProdaction
+careProdaction */
+
+
+
+.careContainer {
+    
+    display: flex;
+  
+}
+.filterContainer{
+    width: 960px;
+    margin: 0;
+    display: flex;
+ 
+}
+.filter {
+    margin-right: auto;
+    width: 180px;
+}
+
+
+.filterTitle {
+    margin-top: 50px;
+    margin-bottom: 30px;
+    font-size: 24px;
+}
+.producerBtn {
+    line-height: 30px;
+    margin-top: 30px;
+}
+.goodsRow {
+}
+.radio {
+    display: block;
+    cursor: pointer;
+}
+
+.radio+.radio {
+    margin-top: 15px;
+}
+
+.radio_real {
+    width: 1;
+    height: 1px;
+    position: absolute;
+    opacity: 0;
+    appearance: none;
+}
+
+
+.radio_fake {
+    position: relative;
+    display: inline-block;
+    margin-right: 10px;
+    vertical-align: bottom;
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border: 1px solid;
+    border-radius: 50%;
+}
+
+
+/* .radio {
+}
+.radio_real {
+}
+.radio_fake {
+} */
+.radio_real:checked+.radio_fake::before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    content: "";
+    border-radius: 50%;
+    width: 8px;
+    height: 8px;
+    background: #3c3c3c;
+    transform: translate(-50%, -50%);
+}
+
+.radio_real:checked~.radio_title {
+    font-weight: 500;
+}
+
+
+.radio_title {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.18;
+    color: #000;
+}
+/* .radio_title {
+} */
+.filterBtn {
+    box-sizing: border-box;
+
+    width: 110px;
+    height: 45px;
+    margin: 0;
+    /* margin-left: auto; */
+    margin-right: auto;
+    margin-top: 50px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    text-align: center;
+    justify-content: center;
+    background-color: black;
+    font-family: 'PT Sans Narrow';
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    line-height: 1;
+}
+
+
+.goods {
+    margin: 0;
+    margin-right: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 740px;
+    justify-content: space-between;
+    
+}
+
+.good {
+    width: 220px;
+    height: 285px;
+    margin: 0;
+    margin-left: auto;
+    margin-top: 20px;
+    box-shadow: 1px 1px 10px 1px #777777;
+    background-color: white;
+}
+
+ 
+
+
+.goodsName {
+    font-size:14;
+    text-transform: none;
+    padding-left: 15px;
+    padding-top: 3px;
+}
+.buyGoods {
+    box-sizing: border-box;
+    width: 190px;
+    height: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: 15;
+    display: flex;
+    background-color: rgb(229, 229, 229);
+    justify-content: space-between;
 }
