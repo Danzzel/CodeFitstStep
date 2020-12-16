@@ -408,8 +408,11 @@ text-transform: uppercase;
 }
 
 .footerSocial {
+    align-content: center;
     margin-left: auto;
     margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
     text-transform: uppercase;
 
 
@@ -425,7 +428,7 @@ text-transform: uppercase;
     width: 300px;
     margin-right: 40px;
     margin-top: auto;
-    margin-bottom: 40px;
+    margin-bottom: auto;
     text-align: end;
 
 }
@@ -679,6 +682,7 @@ careProdaction */
 
 
 .goods {
+    position: static;
     margin: 0;
     margin-right: 0;
     padding-right: 0;
@@ -687,6 +691,7 @@ careProdaction */
     display: flex;
     flex-wrap: wrap;
     width: 740px;
+    
     justify-content: space-between;
     
 }
@@ -721,4 +726,113 @@ careProdaction */
     display: flex;
     background-color: rgb(229, 229, 229);
     justify-content: space-between;
+}
+
+.goodsList {
+    box-sizing: border-box;
+    margin-left: 27px;
+    margin-top: 40px;
+    /* width: 150px; */
+    height: 40px;
+
+}
+.goodsCheckbox {
+    width: 1;
+    height: 1px;
+    position: absolute;
+    opacity: 0;
+    appearance: none;
+    
+    
+}
+.goodsBtn {
+    flex-grow: 1;
+    /* height: 40px; */
+    padding: 12px 17px;
+    background-color: transparent;
+    border: none;
+
+    text-align: center;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 40px;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+    
+}
+
+/* Style of Price */
+/* Style of Price */
+/* Style of Price */
+/* Style of Price */
+
+.priceTitle {
+  margin-top: 50px;
+    position: relative;
+    padding-top: 24px;
+
+}
+.line {
+    height: 2px;
+    background-color: black;
+   
+}
+.textPriceTitle {
+    
+    position: absolute;
+    padding-left: 20px;
+    padding-right: 20px;
+    top: 0;
+    left: 20.6%;
+    background-color: rgb(250, 247, 242);
+   
+       font-size: 48px;
+}
+
+.priceInfo {
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 15px;
+    
+}
+
+.infoLeft {
+    width: 390px;
+}
+.infoTitle {
+    font-size: 24px;
+    font-weight: 1.25;
+}
+.infoMaterials {
+    margin-top: 24px;
+}
+
+
+.infoAboutUs {
+    margin-top: 60px;
+}
+.infoText {
+    margin-top: 30px;
+font-size: 14px;
+line-height: 1.7;
+}
+.infoRight {
+    width: 460px;
+    margin-left: 90px;
+}
+.priceTable {
+
+}
+
+.table {
+    display: ;
+}
+td {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    width: 233px;
+    border: 1px solid #000;
 }
