@@ -6,6 +6,8 @@ font-family: 'PT Sans Narrow', sans-serif;
     margin: 0;
 }
 
+
+
 .mainBody {
     /* display: flex; */
 
@@ -16,6 +18,22 @@ font-family: 'PT Sans Narrow', sans-serif;
     background-size: cover;
     
 
+}
+button {
+    cursor: pointer;
+   
+}
+button:focus {
+   background-color: rgb(102, 61, 21);
+   outline: none !important
+   
+}
+button:hover {
+    background-color: rgb(102, 61, 21);
+}
+
+.btnHover:hover {
+    background-color: rgb(102, 61, 21);
 }
 
 li {
@@ -206,7 +224,7 @@ img {
 }
 
 
-/* .btn {
+.btn {
 
     box-sizing: border-box;
 
@@ -226,7 +244,7 @@ img {
     color: white;
     line-height: 1;
     border: none;
-} */
+}
 
 
 /* .btnText{
@@ -248,13 +266,17 @@ img {
 
 .indexContentRight {
 
-    width: 300px;
+    width: 340px;
     margin-left: auto;
     margin-right: auto;
 
 }
+.indexContentRight>p {
+    width: 300px;
+}
 
 .indexContentTitle {
+    width: 300px;
     font-size: 30px;
     text-transform: uppercase;
 }
@@ -266,44 +288,7 @@ img {
 
 }
 
-/* .btnGalleryPrev {
-  
-    box-sizing: border-box;
-    
-    
-    width: 140px;
-    height: 45px;
-    margin: 0;
-    margin-bottom: 40px;
-    padding-left: 32px;
-    padding-right: 32px;
-    padding-top: 14px;
-    padding-bottom: 14px;
-    justify-content: center;
-   
-    background-color: black;
-   
-     text-decoration: none;
-    text-transform: uppercase;
-    color: white;
-} */
-/* .btnGalleryNext {
-    box-sizing: border-box;
-    
-    width: 140px;
-    height: 45px;
-    margin: 0;
-    padding-left: 32px;
-    padding-right: 32px;
-    padding-top: 14px;
-    padding-bottom: 14px;
-    justify-content: center;
-    background-color: black;
-   
-     text-decoration: none;
-    text-transform: uppercase;
-    color: white;
-} */
+
 
 .contact {
     margin: 0;
@@ -349,17 +334,28 @@ text-transform: uppercase;
 .formItem {
     margin: 0;
     padding: 0;
+    padding-left: 10px;
+    border: 2px solid #000;
 
-
+margin-right: 20px;
     margin-bottom: 20px;
     /* margin-right: auto; */
     box-sizing: border-box;
-    border: 1px solid #000000;
+    
     width: 140px;
     height: 45px;
 
 
 }
+
+.formItem:hover {
+    border-color: rgb(102, 61, 21) ;
+}
+
+.formItem:focus {
+    border-color: rgb(102, 61, 21) ;
+}
+
 
 
 .sendBtn {
@@ -368,9 +364,9 @@ text-transform: uppercase;
     width: 300px;
     height: 45px;
     margin: 0;
-    /* margin-left: auto; */
+    margin-top:36px;
     margin-right: auto;
-    /* margin-right: 20px; */
+    
     padding-top: 14px;
     padding-bottom: 14px;
     text-align: center;
@@ -402,7 +398,7 @@ text-transform: uppercase;
 
 .footerContacts {
     width: 300px;
-    margin-left: 40px;
+    margin-left: 0;
     text-align: start;
     line-height: 1.2;
 }
@@ -418,15 +414,11 @@ text-transform: uppercase;
 
 }
 
-.btnVk {}
 
-.btnFb {}
-
-.btnVInst {}
 
 .footerCopiright {
     width: 300px;
-    margin-right: 40px;
+    margin-right: 0;
     margin-top: auto;
     margin-bottom: auto;
     text-align: end;
@@ -495,6 +487,10 @@ text-transform: uppercase;
    
    
     
+}
+.travelKit {
+    text-decoration: none;
+    color: black;
 }
 
 .description {
@@ -594,9 +590,17 @@ careProdaction */
 .producerBtn {
     line-height: 30px;
     margin-top: 30px;
+    cursor: pointer;
 }
-.goodsRow {
+.producerCheckbox:checked+:hover+.producerBtn {
+    color:green;
+
 }
+.producerCheckbox:hover+.producerBtn{
+   
+   color:rgb(102, 61, 21);
+}
+
 .radio {
     display: block;
     cursor: pointer;
@@ -742,25 +746,31 @@ careProdaction */
     position: absolute;
     opacity: 0;
     appearance: none;
+    background-color: #fff;
     
     
 }
 .goodsBtn {
     flex-grow: 1;
-    /* height: 40px; */
-    padding: 12px 17px;
+    width: 40px;
+    height: 40px;
+  
     background-color: transparent;
     border: none;
 
     text-align: center;
     font-style: normal;
-    font-weight: 500;
+    /* font-weight: 500; */
     font-size: 14px;
     line-height: 40px;
     color: white;
     background-color: black;
     cursor: pointer;
     
+}
+.goodsBtn:focus {
+    background-color: white;
+    color: black;
 }
 
 /* Style of Price */
@@ -827,12 +837,31 @@ line-height: 1.7;
 }
 
 .table {
-    display: ;
+    width: 460px;
+    margin-top: 40px;
+    border-collapse: collapse;
+    justify-content: center;
+    vertical-align: center;
 }
 td {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+    /* box-sizing: border-box; */
+    /* margin: 0;
+    padding: 0; */
+   padding-top: 14px;
+    padding-bottom: 14px;
     width: 233px;
     border: 1px solid #000;
+    text-align: center;
+}
+.leftColumn {
+    text-align: left;
+    padding-left:10px ;
+}
+
+.infoTextRight {
+    width: 380px;
+    margin: 0;
+    margin-top: 85px;
+    font-size: 14px;
+    line-height: 1.7;
 }
