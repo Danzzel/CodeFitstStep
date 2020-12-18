@@ -207,7 +207,7 @@ img {
 
 .indexContentLeft {
     width: 350px;
-    margin-left: 64px;
+    margin-left: 80px;
     margin-right: auto;
     text-decoration: none;
     marker: none;
@@ -268,7 +268,7 @@ img {
 
     width: 340px;
     margin-left: auto;
-    margin-right: auto;
+    margin-right: 26px;
 
 }
 .indexContentRight>p {
