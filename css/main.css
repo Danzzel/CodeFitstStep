@@ -1,33 +1,36 @@
 body {
-    text-transform: uppercase;
-     margin-left: auto;
-    margin-right: auto;
-font-family: 'PT Sans Narrow', sans-serif;
     margin: 0;
+    text-transform: uppercase;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'PT Sans Narrow', sans-serif;
+
 }
 
 
 
 .mainBody {
     /* display: flex; */
+max-width: 1638px;
 
-   
     background: url(../img/tint.jpg );
 
     background-repeat: no-repeat;
     background-size: cover;
-    
+
 
 }
+
 button {
     cursor: pointer;
-   
+
 }
+
 button:focus {
-   background-color: rgb(102, 61, 21);
-   outline: none !important
-   
+    background-color: rgb(102, 61, 21);
+    outline: none !important
 }
+
 button:hover {
     background-color: rgb(102, 61, 21);
 }
@@ -41,7 +44,7 @@ li {
 }
 
 
-    
+
 
 img {
     margin: 0;
@@ -71,8 +74,9 @@ img {
 .container {
     /* position: absolute; */
     display: flex;
-    width: 960px;
-    margin: 0, auto;
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
     /* right: 0; */
     padding: 0, 10;
     justify-content: space-between;
@@ -271,6 +275,7 @@ img {
     margin-right: 26px;
 
 }
+
 .indexContentRight>p {
     width: 300px;
 }
@@ -337,11 +342,11 @@ text-transform: uppercase;
     padding-left: 10px;
     border: 2px solid #000;
 
-margin-right: 20px;
+    margin-right: 20px;
     margin-bottom: 20px;
     /* margin-right: auto; */
     box-sizing: border-box;
-    
+
     width: 140px;
     height: 45px;
 
@@ -349,11 +354,11 @@ margin-right: 20px;
 }
 
 .formItem:hover {
-    border-color: rgb(102, 61, 21) ;
+    border-color: rgb(102, 61, 21);
 }
 
 .formItem:focus {
-    border-color: rgb(102, 61, 21) ;
+    border-color: rgb(102, 61, 21);
 }
 
 
@@ -364,9 +369,9 @@ margin-right: 20px;
     width: 300px;
     height: 45px;
     margin: 0;
-    margin-top:36px;
+    margin-top: 36px;
     margin-right: auto;
-    
+
     padding-top: 14px;
     padding-bottom: 14px;
     text-align: center;
@@ -380,7 +385,7 @@ margin-right: 20px;
 }
 
 .mainFooter {
-  
+
     margin: 0;
     display: flex;
     margin-left: auto;
@@ -424,11 +429,12 @@ margin-right: 20px;
     text-align: end;
 
 }
- .smile {
-     
-     margin-right: auto;
-     margin-left: auto;
- }
+
+.smile {
+
+    margin-right: auto;
+    margin-left: auto;
+}
 
 .bodyPages {
     height: 100%;
@@ -445,13 +451,14 @@ margin-right: 20px;
     margin-top: auto;
     margin-bottom: auto;
 }
+
 .containerOther {
     margin: 0;
-    width: 960px;
-    
+    max-width: 960px;
+
     margin-right: auto;
     margin-left: auto;
-    
+
 }
 
 .shopTitle {
@@ -459,7 +466,7 @@ margin-right: 20px;
     padding-top: 60px;
     margin-bottom: 25px;
     text-transform: uppercase;
-} 
+}
 
 
 .shopSection {
@@ -478,29 +485,30 @@ margin-right: 20px;
     display: flex;
 }
 
-.bagGal { 
+.bagGal {
     width: 500px;
     margin: 0;
-    
+
     margin-right: auto;
     margin-left: -10px;
-   
-   
-    
+
+
+
 }
+
 .travelKit {
     text-decoration: none;
     color: black;
 }
 
 .description {
-    
+
     width: 390px;
     margin: 0;
     margin-left: auto;
     font-size: 14px;
     line-height: 1.2;
-    
+
 }
 
 .descriptionTitle {
@@ -508,6 +516,7 @@ margin-right: 20px;
     justify-content: space-between;
     margin-bottom: 40px;
 }
+
 .article {
     color: rgb(183, 183, 183);
 }
@@ -520,15 +529,15 @@ margin-right: 20px;
     display: flex;
     background-color: rgb(229, 229, 229);
     justify-content: space-between;
-    
-} 
+
+}
 
 .price {
-margin: 0;
-margin-left: auto;
-margin-right: auto;
-margin-top: auto;
-margin-bottom: auto;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 .btnPrice {
@@ -549,9 +558,10 @@ margin-bottom: auto;
 
 
 }
- 
+
 .complectImgShape {
-    margin: 0;margin-right: 10px;
+    margin: 0;
+    margin-right: 10px;
 }
 
 
@@ -566,16 +576,18 @@ careProdaction */
 
 
 .careContainer {
-    
+
     display: flex;
-  
+
 }
-.filterContainer{
-    width: 960px;
+
+.filterContainer {
+    max-width: 960px;
     margin: 0;
     display: flex;
- 
+
 }
+
 .filter {
     margin-right: auto;
     width: 180px;
@@ -587,18 +599,35 @@ careProdaction */
     margin-bottom: 30px;
     font-size: 24px;
 }
+
 .producerBtn {
     line-height: 30px;
     margin-top: 30px;
     cursor: pointer;
 }
-.producerCheckbox:checked+:hover+.producerBtn {
-    color:green;
-
+.producerCheckbox {
+    position: absolute;
+    width: 0;
+    height: 0;
+    opacity: 0;
 }
-.producerCheckbox:hover+.producerBtn{
-   
-   color:rgb(102, 61, 21);
+
+.producerCheckboxFake {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 15px;
+    width: 15px;
+    height: 15px;
+    border: 2px solid #000;
+    
+}
+.producerCheckbox:checked+.producerCheckboxFake{
+    background-image: url(../img/smallKrestik.png);
+}
+
+.producerBtn:hover {
+
+    color: rgb(102, 61, 21);
 }
 
 .radio {
@@ -661,6 +690,7 @@ careProdaction */
     line-height: 1.18;
     color: #000;
 }
+
 /* .radio_title {
 } */
 .filterBtn {
@@ -695,9 +725,9 @@ careProdaction */
     display: flex;
     flex-wrap: wrap;
     width: 740px;
-    
+
     justify-content: space-between;
-    
+
 }
 
 .good {
@@ -710,15 +740,16 @@ careProdaction */
     background-color: white;
 }
 
- 
+
 
 
 .goodsName {
-    font-size:14;
+    font-size: 14;
     text-transform: none;
     padding-left: 15px;
     padding-top: 3px;
 }
+
 .buyGoods {
     box-sizing: border-box;
     width: 190px;
@@ -740,6 +771,7 @@ careProdaction */
     height: 40px;
 
 }
+
 .goodsCheckbox {
     width: 1;
     height: 1px;
@@ -747,14 +779,15 @@ careProdaction */
     opacity: 0;
     appearance: none;
     background-color: #fff;
-    
-    
+
+
 }
+
 .goodsBtn {
     flex-grow: 1;
     width: 40px;
     height: 40px;
-  
+
     background-color: transparent;
     border: none;
 
@@ -766,8 +799,9 @@ careProdaction */
     color: white;
     background-color: black;
     cursor: pointer;
-    
+
 }
+
 .goodsBtn:focus {
     background-color: white;
     color: black;
@@ -779,42 +813,46 @@ careProdaction */
 /* Style of Price */
 
 .priceTitle {
-  margin-top: 50px;
+    margin-top: 50px;
     position: relative;
     padding-top: 24px;
 
 }
+
 .line {
     height: 2px;
     background-color: black;
-   
+
 }
+
 .textPriceTitle {
-    
+
     position: absolute;
     padding-left: 20px;
     padding-right: 20px;
     top: 0;
     left: 20.6%;
     background-color: rgb(250, 247, 242);
-   
-       font-size: 48px;
+
+    font-size: 48px;
 }
 
 .priceInfo {
     display: flex;
     margin-top: 50px;
     margin-bottom: 15px;
-    
+
 }
 
 .infoLeft {
     width: 390px;
 }
+
 .infoTitle {
     font-size: 24px;
     font-weight: 1.25;
 }
+
 .infoMaterials {
     margin-top: 24px;
 }
@@ -823,18 +861,19 @@ careProdaction */
 .infoAboutUs {
     margin-top: 60px;
 }
+
 .infoText {
     margin-top: 30px;
-font-size: 14px;
-line-height: 1.7;
+    font-size: 14px;
+    line-height: 1.7;
 }
+
 .infoRight {
     width: 460px;
     margin-left: 90px;
 }
-.priceTable {
 
-}
+.priceTable {}
 
 .table {
     width: 460px;
@@ -843,19 +882,21 @@ line-height: 1.7;
     justify-content: center;
     vertical-align: center;
 }
+
 td {
     /* box-sizing: border-box; */
     /* margin: 0;
     padding: 0; */
-   padding-top: 14px;
+    padding-top: 14px;
     padding-bottom: 14px;
     width: 233px;
     border: 1px solid #000;
     text-align: center;
 }
+
 .leftColumn {
     text-align: left;
-    padding-left:10px ;
+    padding-left: 10px;
 }
 
 .infoTextRight {
