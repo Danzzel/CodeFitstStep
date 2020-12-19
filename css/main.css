@@ -1,22 +1,21 @@
+* {
+    box-sizing: border-box;
+}
 body {
     /* position: fixed; */
     margin: 0;
     text-transform: uppercase;
-  
+
     font-family: 'PT Sans Narrow', sans-serif;
 
 }
 
-@media (max-width:959px) {
-    .bodyPages {
-        width: 959px;
-    }
-}
+
 
 
 
 .mainBody {
-   
+
     margin: 0;
     margin-left: auto;
     margin-right: auto;
@@ -93,11 +92,7 @@ img {
 
 }
 
-@media (max-width:959px) {
-    .mainBody {
-        width: 959px;
-    }
-}
+
 
 .mainNavigation {
     /* position: absolute;
@@ -122,14 +117,15 @@ img {
     margin-bottom: auto;
     color: white;
     text-decoration: none;
-   
+
     vertical-align: -webkit-baseline-middle;
 }
 
 /* .navPoint:first-child{
     padding-left: 0;
 } */
-.UserBlock {
+.UserBlock { 
+    width: 65px;
     margin: 0;
     padding: 0;
     display: flex;
@@ -137,7 +133,7 @@ img {
     margin-bottom: auto;
     margin-left: auto;
     margin-right: 10px;
-    width: 55px;
+   
 
     /* right: 0;
     display: flex;
@@ -448,7 +444,7 @@ text-transform: uppercase;
 
 }
 
-   
+
 
 
 
@@ -618,7 +614,7 @@ careProdaction */
     max-width: 960px;
     margin: 0;
     display: flex;
-    
+
 
 }
 
@@ -950,10 +946,30 @@ td {
 /* Pagea adaptation */
 
 
+
+
+@media (max-width:959px) {
+    .bodyPages {
+        width: 959px;
+    }
+
+    .mainBody {
+        width: 959px;
+        
+    }
+    
+}
+@media (max-width:800px){
+    .featuresText {
+        font-size: 16px;
+    }
+}
+}
 .mobNavigation {
     margin: 0;
     position: absolute;
     top: 0;
+    left: -200px;
     width: 160px;
     text-decoration: none;
     text-align: left;
@@ -965,29 +981,124 @@ td {
     margin-top: 25px;
     margin-left: 30px;
 }
+
 .mobMainNavigation {
     margin: 0;
 }
-.logoImg {
-   
-}
+
+.logoImg {}
+
 .mobNavPoint {
     padding: 0;
     text-decoration: none;
     color: white;
 }
+
 .mobUserBlock {
     margin-top: 40px;
     margin-bottom: 20px;
 }
+
 .login>img {
     margin-right: 10px;
     padding: 0;
-   vertical-align: baseline;
-    
+    vertical-align: baseline;
+
 }
-.login {
-}
+
+.login {}
+
 .mobUl {
     padding: 0;
+}
+
+@media(max-width:560px) {
+    /* body {
+        width: 368px;
+    } */
+    .featuresText {
+        font-size: 12px;
+    }
+    .container {
+        width: 368px;
+    }
+    .mainBody {
+        flex-direction: column;
+        align-items: center;
+        width: auto;
+        margin: 0;
+      justify-content: center;
+    }
+    .mainHeader {
+        display: none;
+    }
+    .mainContainer {
+         width: 100%;
+        margin: 0;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
+        background-position: center;
+        
+        
+        /* margin-left: auto; */
+        /* margin-right: auto; */
+        
+        
+        
+    justify-content: center;
+    }
+
+    .mobNavigation {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .indexLogo {
+        width: 368px;
+    }
+    .features {
+        flex-direction: row;
+        width: 368px;
+        
+    }
+    .indexContent {
+        margin-top: 0;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 368px;
+        height: auto;
+        justify-content: center;
+    }
+    .indexContentLeft {
+        margin: 0;
+        margin-left: 10px;
+    }
+    .lastNews {
+        width: auto;
+        height: auto;
+        
+    }
+    .indexContentRight {
+        width: auto;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .oppointmentForm {
+        justify-content: space-around;
+        align-items: center;
+    
+    }
+
+    .formItem {
+      margin-left: 20px;
+      margin-right: 50px;
+    }
+    .sendBtn {
+        width: 140px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: 20px;
+    }
 }
