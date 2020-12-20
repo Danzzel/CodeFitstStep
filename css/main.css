@@ -135,15 +135,6 @@ img {
     margin-right: 10px;
    
 
-    /* right: 0;
-    display: flex;
-    list-style-type: disc;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 40px;
-    padding-inline-end: 40px; */
 }
 
 .mainContainer {
@@ -276,14 +267,7 @@ img {
 }
 
 
-/* .btnText{
-    width: 140px;
-    height: 45px;
-    margin: 0;
-    justify-content: center;
-    background-color: black;
-    
-} */
+
 .newsPoint {
 
     text-decoration: none;
@@ -944,7 +928,51 @@ td {
 /* Pagea adaptation */
 /* Pagea adaptation */
 /* Pagea adaptation */
-
+.mobContainerActive {
+    padding: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 30px;
+    height: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.027) ;
+    border-radius: 2px;
+    background-color: #fff;
+    
+}
+.menuActive {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    margin-left: 4px;
+    margin-right: 3px;
+    width: 20px;
+    border: 2px solid #000;
+    border-radius: 1px;
+}
+.menuActive::after {
+   padding: 0;
+   margin: 0;
+     position: absolute;
+    top: 10px;
+    left: -2px;
+    content: "";
+    width: 16px;
+    border: 2px solid #000;
+    border-radius: 1px;
+    /* background-color: black; */
+}
+.menuActive::before {
+  padding: 0;
+  margin: 0;
+    position: absolute;
+    top: -6px;
+    left: -2px;
+    content: "";
+    width: 16px;
+    border: 2px solid #000;
+    border-radius: 1px;
+}
 
 
 
@@ -964,16 +992,16 @@ td {
         font-size: 16px;
     }
 }
-.displeyNone {
+/* .displayNone {
     display: none;
-}
+} */
 .mobNavigation {
     
     margin: 0;
     position: absolute;
-    top: -500px;
+    top: 0;
 
-    left: -200px;
+    left: 0;
     width: 160px;
     text-decoration: none;
     text-align: left;
