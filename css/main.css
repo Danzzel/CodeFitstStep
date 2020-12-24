@@ -1257,13 +1257,11 @@ td {
  }
 
  .experiments {
+     display: flex;
      width: 1200px;
  }
  .block {
-     position: fixed;
      
-     left: 37%;
-    right: auto;
      
 
      width: 480px;
@@ -1281,4 +1279,8 @@ td {
      background-image: url(../img/imgExperiments/sadSmile.png);
      background-size: cover;
       
+ }
+ .changeText {
+     margin: 15px;
+     height: 200px;
  }
