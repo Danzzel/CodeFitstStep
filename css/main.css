@@ -1255,6 +1255,30 @@ td {
     color: black;
  
  }
+
+ .experiments {
+     width: 1200px;
+ }
  .block {
+     position: fixed;
      
+     left: 37%;
+    right: auto;
+     
+
+     width: 480px;
+     height: 480px;
+     cursor: pointer;
+ }
+
+ .happy {
+     background-image: url(../img/imgExperiments/HappySmiley.png);
+     background-size: cover;
+    
+ }
+
+ .sad {
+     background-image: url(../img/imgExperiments/sadSmile.png);
+     background-size: cover;
+      
  }
