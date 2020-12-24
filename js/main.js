@@ -27,10 +27,10 @@ var galery = [
     
 ]
 
-
+length = galery.length
 
 btnGalleryNext.onclick = function () {
-    if(i>=2){
+    if(i>=length-1){
         i=0
     }
     else{i++}
