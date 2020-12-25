@@ -1258,6 +1258,7 @@ td {
 
  .experiments {
      display: flex;
+     flex-wrap: wrap;
      width: 1200px;
  }
  .block {
@@ -1270,17 +1271,26 @@ td {
  }
 
  .happy {
+    width: 480px;
+    height: 480px;
      background-image: url(../img/imgExperiments/HappySmiley.png);
      background-size: cover;
     
  }
 
  .sad {
+    width: 480px;
+    height: 480px;
      background-image: url(../img/imgExperiments/sadSmile.png);
      background-size: cover;
       
  }
  .changeText {
-     margin: 15px;
+    
+     
+     margin: 50px;
      height: 200px;
+ }
+ .parag>p{
+    /* color: blue; */
  }

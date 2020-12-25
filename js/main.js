@@ -26,6 +26,7 @@ block.addEventListener('click', changeSmile)
 
 function castomText () {
     yourText.textContent = input.value
+    input.value = ''
 }
 inputBtn.addEventListener('click',castomText)
 
@@ -42,3 +43,16 @@ block.addEventListener('mouseenter',function(){
 block.addEventListener('mouseleave',function(){
     this.style.backgroundImage = 'url(../img/imgExperiments/sadSmile.png'
 })
+
+var p = document.querySelectorAll('p')
+
+
+for (var i=0; i<p.length; i++) {
+p[i].addEventListener('click', function(event) {
+    event.target.style.color = event.target.style.color == 'green'
+    ?'red'
+   
+    :'green'
+
+})
+}
