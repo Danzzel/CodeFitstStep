@@ -18,7 +18,7 @@ sitebarToggleBtn.onclick = function () {
 var btnGalleryPrev = document.querySelector('.btnGalleryPrev')
 var btnGalleryNext = document.querySelector('.btnGalleryNext')
 var galeryImg = document.querySelector('.galeryImg')
-var i =1
+var i =0
 
 var galery = [
     '../img/Layer20.png',
@@ -26,7 +26,7 @@ var galery = [
     '../img/Layer22.png'
     
 ]
-
+galeryImg.src = galery[0]
 length = galery.length
 
 btnGalleryNext.onclick = function () {
