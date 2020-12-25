@@ -23,10 +23,11 @@ var i =0
 var galery = [
     '../img/Layer20.png',
     '../img/Layer21.png',
-    '../img/Layer22.png'
+    '../img/Layer22.png',
+    '../img/good04.png'
     
 ]
-galeryImg.src = galery[0]
+galeryImg.src = galery[1]
 length = galery.length
 
 btnGalleryNext.onclick = function () {
@@ -50,7 +51,8 @@ else {i--}
 var inputImg = document.querySelector('inputImg')
 var inputImgBtn = document.querySelector('inputImgBtn')
 
-inputImgBtn.onclick = function loadImg() {
+function loadImg() {
     // var addImg = inputImg.value
     galery.push(inputImg.value)
 }
+inputBtn.addEventListener('click',loadImg)
