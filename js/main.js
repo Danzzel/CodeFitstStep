@@ -47,3 +47,10 @@ else {i--}
   
 } 
  
+var inputImg = document.querySelector('inputImg')
+var inputImgBtn = document.querySelector('inputImgBtn')
+
+inputImgBtn.onclick = function loadImg() {
+    // var addImg = inputImg.value
+    galery.push(inputImg.value)
+}
