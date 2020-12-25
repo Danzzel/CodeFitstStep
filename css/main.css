@@ -1178,6 +1178,7 @@ td {
         justify-content: center;
     }
 
+
     /* 
     .mobNavigation {
         
@@ -1320,6 +1321,8 @@ td {
 /* .price */
 
 @media(max-width:560px) {
+
+
     .mainFooter {
         position: absolute;
         padding: 0;
@@ -1427,7 +1430,6 @@ td {
 
 }
 
-
 /* loginForm */
 /* loginForm */
 /* loginForm */
@@ -1435,6 +1437,8 @@ td {
 /* loginForm */
 
 .loginForm {
+    display: none;
+    margin: 0;
     width: 348px;
     height: 320px;
     position: fixed;
@@ -1517,9 +1521,10 @@ td {
     margin-right: auto;
     margin-top: 20px;
     font-size: 12px;
-    
-    
+
+
 }
+
 .rememberMe {
     width: 120px;
     cursor: pointer;
@@ -1549,10 +1554,12 @@ td {
     background-image: url(../img/smallKrestik.png);
     background-size: cover;
 }
+
 .rememberBtn {
-    
+
     cursor: pointer;
 }
+
 .rememberBtn:hover {
 
     color: rgb(102, 61, 21);
@@ -1578,6 +1585,7 @@ td {
     top: 10px;
     cursor: pointer;
 }
+
 .reg {
     text-decoration: none;
     font-size: 12px;
@@ -1585,6 +1593,29 @@ td {
     color: black;
     margin-left: 147px;
 }
-   .loginForm {
-       display: none;
-   }
+
+@media(max-width:560px) {
+    .loginForm {
+
+        width: 100%;
+        /* height: 320px; */
+        position: fixed;
+        margin: 0;
+        left: 0;
+        top: 20%;
+        background-color: transparent;
+        box-shadow: none;
+
+    }
+    .form {
+        margin: 0;
+      
+        height: 320px;
+        width: 348px;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: rgb(240, 240, 240);
+        box-shadow: 1px 1px 20px 2px rgb(34, 34, 34);
+
+    }
+}

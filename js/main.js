@@ -62,12 +62,16 @@ var login = document.querySelector('.login')
 var closeLogin = document.querySelector('.closeLogin')
 var loginForm = document.querySelector('.loginForm')
 
-
+var login1 = document.querySelector('.login1')
 
 closeLogin.onclick = function offLoginForm() {
     loginForm.style.display = 'none'    
 }
 
+
 login.onclick = function onLoginForm() {
+    loginForm.style.display = 'block'    
+}
+login1.onclick = function onLoginForm() {
     loginForm.style.display = 'block'    
 }
