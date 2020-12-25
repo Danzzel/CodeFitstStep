@@ -12,7 +12,7 @@
 </head>
 
 <body class="mainBody">
-    
+
     <header class="mainHeader">
         <div class="container">
             <nav class="mainNavigation">
@@ -43,12 +43,12 @@
             </nav>
             <div class="UserBlock">
                 <a class="login" href="#">
-                    <img src="../img/iconLogin.png" alt=""> <span>ВХІД</span> 
+                    <img src="../img/iconLogin.png" alt=""> <span>ВХІД</span>
                 </a>
             </div>
         </div>
     </header>
-    
+
     <main class="mainContainer">
         <div class="indexLogo">
             <img src="./img/Logo.png" alt="Барбершоп Бородинський">
@@ -142,7 +142,7 @@
                     <a class="btn btnHover" href="#">
                         Зворотній звязок
                     </a>
-                   
+
                 </div>
 
 
@@ -156,55 +156,56 @@
                     УКАЖИТЕ ЖЕЛАЕМУЮ ДАТУ И ВРЕМЯ И МЫ СВЯЖЕМСЯ С ВАМИ ДЛЯ ПОДТВЕРЖДЕНИЯ БРОНИ
                 </p>
                 <form class="oppointmentForm" action="./index.html" method="post">
-                <input class="formItem" type="text" name="time" value="" placeholder=" Дата">
+                    <input class="formItem" type="text" name="time" value="" placeholder=" Дата">
                     <input class="formItem" type="text" name="time" value="" placeholder=" Час">
                     <input class="formItem" type="text" name="time" value="" placeholder=" Ваше ім’я">
                     <input class="formItem" type="text" name="time" value="" placeholder=" Номер телефона">
-                
 
-                <button class="sendBtn" type="submit">Відправити</button></form>
-                
-                    
 
-            </div>
-        </div> 
-        <footer class="mainFooter">
-        <div class="container">
-            <div class="footerContacts">
-                <p>БАРБЕРШОП «БОРОДИНСКИЙ»</p>
-                <p>АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, УЛ. Б. КОНЮШЕННАЯ, Д. 19/8</p>
-                <p>
-                    КАК НАС НАЙТИ?
-                </p>
+                    <button class="sendBtn" type="submit">Відправити</button>
+                </form>
 
-                <p>ТЕЛЕФОН: +7 (495) 666-02-66</p>
+
 
             </div>
-            <section class="footerSocial">
-                <p>Давайте Дружити!</p>
-                <a class="btnVk" href="#">
-                    <img src="./img/vk.png" alt="">
-                </a>
-                <a class="btnFb" href="#">
-                    <img src="./img/fb.png" alt="">
-                </a>
-                <a class="btnVInst" href="#">
-                    <img src="./img/inst.png" alt="">
-                </a>
-            </section>
-            <section class="footerCopiright">
-                <p>Виконав:</p>
-                <p>Мельник Денис</p>
-            </section>
         </div>
+        <footer class="mainFooter">
+            <div class="container">
+                <div class="footerContacts">
+                    <p>БАРБЕРШОП «БОРОДИНСКИЙ»</p>
+                    <p>АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, УЛ. Б. КОНЮШЕННАЯ, Д. 19/8</p>
+                    <p>
+                        КАК НАС НАЙТИ?
+                    </p>
 
-    </footer>
+                    <p>ТЕЛЕФОН: +7 (495) 666-02-66</p>
+
+                </div>
+                <section class="footerSocial">
+                    <p>Давайте Дружити!</p>
+                    <a class="btnVk" href="#">
+                        <img src="./img/vk.png" alt="">
+                    </a>
+                    <a class="btnFb" href="#">
+                        <img src="./img/fb.png" alt="">
+                    </a>
+                    <a class="btnVInst" href="#">
+                        <img src="./img/inst.png" alt="">
+                    </a>
+                </section>
+                <section class="footerCopiright">
+                    <p>Виконав:</p>
+                    <p>Мельник Денис</p>
+                </section>
+            </div>
+
+        </footer>
     </main>
     <button class="mobContainerActive menu_icon_wrapper">
         <div class="menuIcon "></div>
-        </button>
-        
-   
+    </button>
+
+
     <div class="mobNavigation ">
         <div class="mobContainer">
             <nav class="mobMainNavigation">
@@ -235,12 +236,42 @@
             </nav>
             <div class="mobUserBlock">
                 <a class="login" href="#">
-                    <img src="../img/iconLogin.png" alt=""> <span>ВХІД</span> 
+                    <img src="../img/iconLogin.png" alt=""> <span>ВХІД</span>
                 </a>
             </div>
         </div>
     </div>
-<script src="./js/main.js"></script>
+    <div class="loginForm ">
+        <form action="#" class="form">
+            <h2 class="loginTitle">Личный кабинет</h2>
+            <p>Введіть, будь ласка, Ваші дані</p>
+            <div class="inputLogin">
+                <input class="loginInput" type="text" placeholder="Введіть Ваш логін">
+            </div>
+            <div class="InputPassword">
+                <input class="passwordInput" type="text" placeholder="Введіть Ваш пароль">
+            </div>
+            <div class="loginOptions">
+               
+
+                    <form class="rememberMe" type="checkbox">
+                        <input type="checkbox" class="rememberCheckbox" id = "remember" >
+                        <span class="rememberCheckboxFake"></span>
+                        <label class="rememberBtn" for="remember"> Запам’ятайте мене
+
+                        </label>
+                    </form>
+
+                    <div class="missPas">Забули пароль?</div>
+                
+            </div>
+            
+            <button class="InLogin">Увійти</button>
+            <a class="reg" href="#">Реєстрація</a>
+            <img class="closeLogin" src="./img/closeLogin.png" alt="">
+        </form>
+    </div>
+    <script src="./js/main.js"></script>
 </body>
 
 </html>

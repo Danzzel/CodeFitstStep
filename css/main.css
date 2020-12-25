@@ -34,13 +34,14 @@ body {
 
 button {
     cursor: pointer;
+    outline: none;
 
 }
 
-button:focus {
+/* button:focus {
     background-color: rgb(102, 61, 21);
     outline: none !important
-}
+} */
 
 button:hover {
     background-color: rgb(102, 61, 21);
@@ -644,6 +645,7 @@ careProdaction */
 
 .producerCheckbox:checked+.producerCheckboxFake {
     background-image: url(../img/smallKrestik.png);
+    background-size: cover;
 }
 
 .producerBtn:hover {
@@ -1054,9 +1056,9 @@ td {
     }
 }
 
-/* .displayNone {
+.none {
     display: none;
-} */
+}
 
 
 .mobContainer {
@@ -1337,6 +1339,7 @@ td {
         margin-right: auto;
         background-color: transparent;
     }
+
     .footerContacts>p {
         position: relative;
         margin-top: 5px;
@@ -1423,3 +1426,165 @@ td {
 
 
 }
+
+
+/* loginForm */
+/* loginForm */
+/* loginForm */
+/* loginForm */
+/* loginForm */
+
+.loginForm {
+    width: 348px;
+    height: 320px;
+    position: fixed;
+    left: 38%;
+    right: auto;
+    top: 20%;
+    background-color: rgb(240, 240, 240);
+    box-shadow: 1px 1px 20px 2px rgb(34, 34, 34);
+
+}
+
+.loginTitle {
+    text-align: center;
+}
+
+.form>p {
+    text-align: center;
+}
+
+.inputLogin {
+    width: 250px;
+    height: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+.inputLogin:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 4px;
+    margin: auto 0;
+    width: 25px;
+    height: 25px;
+    background: url(../img/loginIcon.png) no-repeat;
+    background-size: cover;
+}
+
+.loginInput {
+    width: 100%;
+    height: 30px;
+}
+
+.InputPassword {
+    width: 250px;
+    height: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    position: relative;
+}
+
+.InputPassword:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 4px;
+    margin: auto 0;
+    width: 25px;
+    height: 25px;
+    background: url(../img/passwordIcon.png) no-repeat;
+    background-size: cover;
+}
+
+.passwordInput {
+    width: 100%;
+    height: 30px;
+}
+
+
+.loginOptions {
+    width: 250px;
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    font-size: 12px;
+    
+    
+}
+.rememberMe {
+    width: 120px;
+    cursor: pointer;
+}
+
+
+
+
+.rememberCheckbox {
+    position: absolute;
+    width: 0;
+    height: 0;
+    opacity: 0;
+}
+
+.rememberCheckboxFake {
+    display: inline-block;
+    vertical-align: baseline;
+    margin-right: 5px;
+    width: 12px;
+    height: 12px;
+    border: 2px solid #000;
+
+}
+
+.rememberCheckbox:checked+.rememberCheckboxFake {
+    background-image: url(../img/smallKrestik.png);
+    background-size: cover;
+}
+.rememberBtn {
+    
+    cursor: pointer;
+}
+.rememberBtn:hover {
+
+    color: rgb(102, 61, 21);
+}
+
+.missPas {
+    margin-left: auto;
+    cursor: pointer;
+}
+
+.InLogin {
+    height: 45px;
+    width: 250px;
+    margin-top: 30px;
+    margin-left: 49px;
+    background-color: black;
+    color: white;
+}
+
+.closeLogin {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+}
+.reg {
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 600;
+    color: black;
+    margin-left: 147px;
+}
+   .loginForm {
+       display: none;
+   }

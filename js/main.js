@@ -48,11 +48,26 @@ else {i--}
   
 } 
  
-var inputImg = document.querySelector('inputImg')
-var inputImgBtn = document.querySelector('inputImgBtn')
+// var inputImg = document.querySelector('inputImg')
+// var inputImgBtn = document.querySelector('inputImgBtn')
 
-function loadImg() {
-    // var addImg = inputImg.value
-    galery.push(inputImg.value)
+// function loadImg() {
+//     // var addImg = inputImg.value
+//     galery.push(inputImg.value)
+// }
+// inputBtn.addEventListener('click',loadImg)
+
+
+var login = document.querySelector('.login')
+var closeLogin = document.querySelector('.closeLogin')
+var loginForm = document.querySelector('.loginForm')
+
+
+
+closeLogin.onclick = function offLoginForm() {
+    loginForm.style.display = 'none'    
 }
-inputBtn.addEventListener('click',loadImg)
+
+login.onclick = function onLoginForm() {
+    loginForm.style.display = 'block'    
+}
