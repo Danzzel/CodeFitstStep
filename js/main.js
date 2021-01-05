@@ -27,7 +27,7 @@ var galery = [
     '../img/good04.png'
     
 ]
-galeryImg.src = galery[1]
+galeryImg.src = galery[0]
 length = galery.length
 
 btnGalleryNext.onclick = function () {
@@ -40,7 +40,7 @@ btnGalleryNext.onclick = function () {
 }
 btnGalleryPrev.onclick = function () {
     if(i<=0){
-    i=2
+    i=length-1
     }
 else {i--}
     
@@ -75,3 +75,71 @@ login.onclick = function onLoginForm() {
 login1.onclick = function onLoginForm() {
     loginForm.style.display = 'block'    
 }
+
+// форма авторизації
+// форма авторизації
+// форма авторизації
+// форма авторизації
+
+var loginInput = document.querySelector('.loginInput')
+var passInput = document.querySelector('.passwordInput')
+var logBtn =document.querySelector('.inLogin')
+var logOk = document.querySelector('.logOk')
+
+var logPerson = [
+    {name: 'admin', pass:'admin' }
+]
+var a= logPerson.name
+var log = loginInput.value
+var pass = passInput.value
+
+logBtn.addEventListener('click', function() {
+   logPerson.find(function(person) {
+        // return person.name == 'admin' 
+        if( log == a){
+            console.log('Ok')
+        }
+        else {
+            console.log('Ne Ok')
+        }
+    })
+        // if (f){
+            
+        // }
+        // else {
+        //     console.log('wrong')
+        // }
+    
+
+        
+// logPerson.find (function(){
+//    function p(){ logOk.style.display = 'none'}
+//   if (logPerson.name == true  && logPerson.pass == true ){
+//     logOk.style.display = 'block'
+//     loginForm.style.display = 'none'
+   
+    
+//    }
+//     else {
+//      logOk.style.backgroundImage = 'url(../img/sadSmile.png)' 
+//     logOk.style.display = 'block'
+//     loginForm.style.display = 'none'
+//    function disNone(){
+//     logOk.style.display = 'none'
+    
+//    }
+        
+// }
+// setTimeout(p, 1000)
+
+// })
+    
+
+// var log = loginInput.value
+// var pass = passInput.value
+// var den = [{name: log , pass:pass}]
+// logPerson = logPerson.concat(den);
+// console.log(logPerson)
+loginInput.value =''
+passInput.value = ''
+})
