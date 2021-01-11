@@ -236,43 +236,75 @@
             </nav>
             <div class="mobUserBlock">
                 <a class="login login1" href="#">
-                    <img  src="../img/iconLogin.png" alt=""> <span>ВХІД</span>
+                    <img src="../img/iconLogin.png" alt=""> <span>ВХІД</span>
                 </a>
             </div>
         </div>
     </div>
+    <div class="regForm  " id="registration">
+        <form action="#" class="form">
+            <h2 class="loginTitle">Реєстрація</h2>
+            <p>Введіть, будь ласка, Ваші дані</p>
+            <div class="inputReg">
+                <input  id="regLog" class="regInput" type="text" placeholder="Введіть Ваш логін">
+            </div>
+            <div class="inputReg">
+                <input id="regPass" class="regInput" type="text" placeholder="Введіть Ваш пароль">
+                <input id="regRePass" class="regInput" type="text" placeholder="Підтвердіть Ваш пароль">
+            </div>
+            <div class="inputReg">
+                <input id="regName" class="regInput" type="text" placeholder=" Ваше ім’я">
+            </div>
+            <div class="inputReg">
+                <input id="regLastName" class="regInput" type="text" placeholder=" Ваше прізвище">
+            </div>
+            <div class="inputReg">
+                <input id="regBirthday" class="regInput" type="date" placeholder=" Ваша дату народження">
+            </div>
+           
+            
+
+
+    
+
+    <button class="inReg" id="regBtn">Зареєструватись</button>
+    <!-- <a class="reg" href="#">Реєстрація</a> -->
+    <img class="closeReg" src="./img/closeLogin.png" alt="">
+    </form>
+    </div>
+
     <div class="loginForm ">
         <form action="#" class="form">
             <h2 class="loginTitle">Личный кабинет</h2>
             <p>Введіть, будь ласка, Ваші дані</p>
             <div class="inputLogin">
-                <input class="loginInput" type="text" placeholder="Введіть Ваш логін">
+                <input class="loginInput" type="text" placeholder="Введіть Ваш логін" value="">
             </div>
             <div class="InputPassword">
                 <input class="passwordInput" type="text" placeholder="Введіть Ваш пароль">
             </div>
             <div class="loginOptions">
-               
 
-                    <form class="rememberMe" type="checkbox">
-                        <input type="checkbox" class="rememberCheckbox" id = "remember" >
-                        <span class="rememberCheckboxFake"></span>
-                        <label class="rememberBtn" for="remember"> Запам’ятайте мене
 
-                        </label>
-                    </form>
+                <form class="rememberMe" type="checkbox">
+                    <input type="checkbox" class="rememberCheckbox" id="remember">
+                    <span class="rememberCheckboxFake"></span>
+                    <label class="rememberBtn" for="remember"> Запам’ятайте мене
 
-                    <div class="missPas">Забули пароль?</div>
-                
+                    </label>
+                </form>
+
+                <div class="missPas">Забули пароль?</div>
+
             </div>
-            
-            <button class="inLogin">Увійти</button>
+
+            <button class="inLogin" id="logBtn">Увійти</button>
             <a class="reg" href="#">Реєстрація</a>
             <img class="closeLogin" src="./img/closeLogin.png" alt="">
         </form>
     </div>
-    <div class="logOk" >
-        
+    <div class="logOk">
+
     </div>
     <script src="./js/main.js"></script>
 </body>

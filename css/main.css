@@ -1437,14 +1437,17 @@ td {
 /* loginForm */
 
 .loginForm {
+    border-radius: 5px;
     display: none;
     margin: 0;
+    margin: auto;
     width: 348px;
     height: 320px;
     position: fixed;
-    left: 38%;
-    right: auto;
+    left: 50%;
+    margin-left: -174px;
     top: 20%;
+  
     background-color: rgb(240, 240, 240);
     box-shadow: 1px 1px 20px 2px rgb(34, 34, 34);
 
@@ -1452,15 +1455,18 @@ td {
 
 .loginTitle {
     text-align: center;
+    margin-bottom: 0;
 }
 
 .form>p {
     text-align: center;
+    margin: 0;
 }
 
 .inputLogin {
     width: 250px;
     height: 30px;
+    margin-top: 30px;
     margin-left: auto;
     margin-right: auto;
     position: relative;
@@ -1632,4 +1638,45 @@ td {
     background-image: url(../img/HappySmiley.png);
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+.hide {
+    display: none;
+}
+
+.regForm {
+    border-radius: 5px;
+    display: none;
+    margin: 0;
+    width: 348px;
+    height: 320px;
+    position: fixed;
+    left: 50%;
+    margin-left: -174px;
+    top: 20%;
+    background-color: rgb(240, 240, 240);
+    box-shadow: 1px 1px 20px 2px rgb(34, 34, 34);
+}
+
+.regInput {
+    margin-top: 8px;
+    width: 174px;
+    margin-left: 87px;
+   
+}
+.inReg {
+    height: 45px;
+    width: 250px;
+    margin-top: 15px;
+    margin-left: 49px;
+    background-color: black;
+    color: white;
+}
+
+
+.closeReg {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
 }
